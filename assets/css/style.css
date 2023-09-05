@@ -1,0 +1,280 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+.navbar {
+  /* Efek transisi navbar saat discroll */
+  margin-bottom: 0;
+}
+
+.navbar.collapsing {
+  opacity: 0.7; /* Opacity saat menu hamburger ditutup */
+}
+
+.navbar.expanded {
+  background-color: rgba(
+    252,
+    250,
+    250,
+    0.95
+  ); /* Warna latar belakang overlay */
+}
+
+.navbar.expanded .navbar-nav {
+  padding-right: 20px; /* Margin kanan untuk link-link di dalam overlay */
+}
+
+.dropdown-menu {
+  animation: fadeInDown 0.3s ease forwards;
+  transform-origin: top;
+  display: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 30%; /* Adjust the value as needed */
+  left: 50%;
+  transform: translateX(-50%, 0);
+  text-align: center;
+}
+.carousel-caption p {
+  margin-bottom: 10px;
+}
+.carousel-caption .btn {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+.carousel-caption .btn:hover {
+  background-color: white;
+  color: black;
+}
+.carousel-caption h2 {
+  font-size: 3vw; /* Mengatur ukuran font dan tombol dengan unit vw */
+}
+
+.carousel-caption h5,
+.carousel-caption .btn {
+  font-size: 2vw;
+}
+
+.atas {
+  margin-top: -100px;
+}
+
+.custom-row {
+  background-color: rgb(242, 242, 242);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.custom-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.row1 {
+  background-color: rgb(249, 252, 243);
+}
+
+.bg-light-gray {
+  background-color: whitesmoke;
+}
+/* CSS untuk mengatur warna abu-abu pada ikon */
+.social-icon i {
+  color: #666;
+  transition: color 0.3s; /* Efek perubahan warna */
+}
+
+/* CSS untuk mengubah warna menjadi hitam saat hover */
+.social-icon:hover i {
+  color: #000;
+}
+
+/* events */
+.event-date {
+  background-color: rgb(123, 206, 81);
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: -30px; /* Atur posisi tanggal ke atas untuk masuk ke dalam gambar */
+  margin-right: 10px; /* Jarak dari gambar */
+}
+
+.event-time {
+  color: rgb(0, 86, 0); /* Warna teks hijau */
+  font-weight: bold; /* Teks tebal */
+}
+
+.event-organizer {
+  font-weight: bold; /* Nama penyelenggara tebal */
+}
+
+.event-location {
+  color: rgb(59, 150, 59); /* Warna teks hijau untuk alamat */
+}
+
+.custom-button {
+  background-color: #5ecf4a; /* Ganti dengan warna yang Anda inginkan */
+  color: #fff; /* Warna teks */
+  border-radius: 10px; /* Sudut radius */
+  padding: 10px 20px; /* Padding tombol */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  font-size: 24px; /* Ukuran teks */
+  display: inline-block;
+}
+
+.custom-button:hover {
+  background-color: #60b751; /* Warna saat tombol dihover */
+  color: #fff;
+}
+
+/* events */
+
+/* CSS untuk mengatur tampilan footer utama */
+.main-footer {
+  background-color: #aedaa2;
+  color: #fff;
+  padding: 20px 0;
+  text-align: left;
+}
+
+/* CSS untuk mengatur tampilan logo di footer utama */
+.footer-logo {
+  max-width: 100px; /* Ukuran maksimum logo */
+}
+
+/* CSS untuk mengatur tampilan tautan di footer utama */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CSS untuk mengatur tampilan nama perusahaan di footer utama */
+.company-name {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* CSS untuk mengatur tampilan komponen "Recent Blog" */
+.recent-blog {
+  color: #fff;
+}
+
+/* CSS untuk mengatur tampilan div secondary footer (copyright dan medsos) */
+.secondary-footer {
+  background-color: #777777;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CSS untuk mengatur tampilan ikon media sosial */
+.social-icons {
+  text-align: right; /* Mengatur ikon media sosial di pojok kanan */
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 10px;
+  transition: color 0.3s; /* Efek transisi warna */
+}
+
+.social-icons a:hover {
+  color: #000; /* Warna saat kursor diarahkan ke ikon */
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-container img {
+    margin-top: 20px;
+  }
+
+  .custom-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .custom-card {
+    margin-bottom: 50px;
+  }
+
+  /* icon card team */
+  .col-lg-3 {
+    flex: 0 0 100%; /* Mengatur ukuran card menjadi 100% lebar layar */
+  }
+
+  .secondary-footer {
+    flex-direction: column; /* Mengatur elemen-elemen menjadi satu kolom */
+    align-items: center; /* Mengatur elemen-elemen di tengah */
+    text-align: center; /* Mengatur teks di tengah */
+  }
+  .social-icons {
+    margin-top: 10px; /* Memberikan jarak atas pada ikon media sosial */
+    text-align: center;
+  }
+  .company-name {
+    text-align: center;
+  }
+  .copyright {
+    margin-bottom: 10px; /* Memberikan jarak bawah pada copyright */
+  }
+}
+
+@media (max-width: 586px) {
+  .card-container {
+    flex: 0 0 calc(100% - 20px); /* Mengatur ukuran card agar mengecil perlahan */
+    max-width: calc(100% - 20px); /* Menyamakan ukuran maksimum dengan flex */
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
